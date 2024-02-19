@@ -47,7 +47,7 @@ class Library:
         for book in new_books:
             self.file.write(book + '\n')
         
-        print(f"{book_title} removed successfully.")
+        print(f"{book_title} removed.")
 
 # 3. Create an object named "lib" with "Library" class
 lib = Library()
@@ -71,5 +71,5 @@ while True:
         book_title = input("Enter the title of the book to remove: ")
         lib.remove_book(book_title)
     else:
-        print("Invalid choice. Please enter 1, 2 or 3.")
+        print("Invalid choice. Please enter 1-2-3.")
 
